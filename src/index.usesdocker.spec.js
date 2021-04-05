@@ -33,7 +33,7 @@ export default tester(
         `,
       })
       await execa.command(
-        `mocha --ui ${packageName`mocha-ui-exports-auto-describe`} index.spec.js`,
+        `mocha --ui ${packageName`mocha-ui-exports-auto-describe`} --timeout 10000 index.spec.js`,
         { stderr: 'inherit' }
       )
     },
