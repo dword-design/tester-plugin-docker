@@ -16,11 +16,19 @@ export default tester(
         'index.spec.js': endent`
           import tester from '@dword-design/tester'
           import execa from 'execa'
+          import { endent, property } from '@dword-design/functions'
           import self from '../src'
 
           export default tester({
-            works: async () => expect(await execa.command('docker run self ls', { all: true }))
-            .toEqual('Dockerfile index.spec.js')
+            works: async () => expect(
+              execa('docker', ['run', '--rm', '-v', \`\${process.cwd()}:/app\`, 'self', 'ls'], { all: true })
+                |> await
+                |> property('all')
+            )
+              .toEqual(endent\`
+                Dockerfile
+                index.spec.js
+              \`)
           }, [self()])
         `,
       })
