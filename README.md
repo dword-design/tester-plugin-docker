@@ -1,12 +1,12 @@
 <!-- TITLE/ -->
-# undefined
+# @dword-design/tester-plugin-docker
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
   <p>
-    <a href="https://npmjs.org/package/undefined">
+    <a href="https://npmjs.org/package/@dword-design/tester-plugin-docker">
       <img
-        src="https://img.shields.io/npm/v/undefined.svg"
+        src="https://img.shields.io/npm/v/@dword-design/tester-plugin-docker.svg"
         alt="npm version"
       >
     </a><img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/tester-plugin-docker/actions">
@@ -54,10 +54,10 @@
 
 ```bash
 # npm
-$ npm install undefined
+$ npm install @dword-design/tester-plugin-docker
 
 # Yarn
-$ yarn add undefined
+$ yarn add @dword-design/tester-plugin-docker
 ```
 <!-- /INSTALL -->
 
