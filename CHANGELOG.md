@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/tester-plugin-docker/compare/v1.0.0...v1.1.0) (2021-04-06)
+
+
+### Features
+
+* add code coverage ([#2](https://github.com/dword-design/tester-plugin-docker/issues/2)) ([2d554a9](https://github.com/dword-design/tester-plugin-docker/commit/2d554a947a48eb9de5c0db33efb712a19edbcf78))
+
 # 1.0.0 (2021-04-05)
 
 
