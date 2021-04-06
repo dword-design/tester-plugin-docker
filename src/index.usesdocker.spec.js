@@ -1,15 +1,16 @@
-import { endent } from '@dword-design/functions'
+import { endent, property } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import packageName from 'depcheck-package-name'
 import execa from 'execa'
 import outputFiles from 'output-files'
+import unifyMochaOutput from 'unify-mocha-output'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
 export default tester(
   {
-    works: async () => {
+    async works() {
       await outputFiles({
-        Dockerfile: endent`
+        'index.dockerfile': endent`
           FROM node:12-alpine
           WORKDIR /app
         `,
@@ -26,16 +27,34 @@ export default tester(
                 |> property('all')
             )
               .toEqual(endent\`
-                Dockerfile
+                index.dockerfile
                 index.spec.js
               \`)
           }, [self()])
         `,
       })
-      await execa.command(
-        `mocha --ui ${packageName`mocha-ui-exports-auto-describe`} --timeout 10000 index.spec.js`,
-        { stderr: 'inherit' }
-      )
+      expect(
+        execa(
+          'nyc',
+          [
+            '--cwd',
+            process.cwd(),
+            '--all',
+            '--extension',
+            '.dockerfile',
+            'mocha',
+            '--ui',
+            packageName`mocha-ui-exports-auto-describe`,
+            '--timeout',
+            10000,
+            'index.spec.js',
+          ],
+          { all: true }
+        )
+          |> await
+          |> property('all')
+          |> unifyMochaOutput
+      ).toMatchSnapshot(this)
     },
   },
   [
