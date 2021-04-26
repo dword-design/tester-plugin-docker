@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/dword-design/tester-plugin-docker/compare/v1.1.3...v1.1.4) (2021-04-26)
+
+
+### Bug Fixes
+
+* update dependency with-local-tmp-dir to v3 ([#7](https://github.com/dword-design/tester-plugin-docker/issues/7)) ([2d47cb7](https://github.com/dword-design/tester-plugin-docker/commit/2d47cb748b41463c1369f1eb2f01c616bb2a7092))
+
 ## [1.1.3](https://github.com/dword-design/tester-plugin-docker/compare/v1.1.2...v1.1.3) (2021-04-22)
 
 
