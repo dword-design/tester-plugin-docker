@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/dword-design/tester-plugin-docker/compare/v1.1.5...v2.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#13](https://github.com/dword-design/tester-plugin-docker/issues/13)) ([53448b7](https://github.com/dword-design/tester-plugin-docker/commit/53448b747c4376a76c3278502f3bf46940fd3f00))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+Co-authored-by: GitHub Actions <actions@github.com>
+
 ## [1.1.5](https://github.com/dword-design/tester-plugin-docker/compare/v1.1.4...v1.1.5) (2021-04-28)
 
 
