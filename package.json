@@ -29,7 +29,7 @@
     "@dword-design/tester": "^1.2.4",
     "depcheck-package-name": "^1.0.5",
     "mocha": "^8.3.2",
-    "mocha-ui-exports-auto-describe": "^1.0.14",
+    "mocha-ui-exports-auto-describe": "^2.0.0",
     "nyc": "^15.1.0",
     "output-files": "^1.1.24",
     "unify-mocha-output": "^1.0.6",
