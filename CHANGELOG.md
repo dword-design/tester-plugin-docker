@@ -1,3 +1,13 @@
+## [2.0.2](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.1...v2.0.2) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4 ([#14](https://github.com/dword-design/tester-plugin-docker/issues/14)) ([9c472a2](https://github.com/dword-design/tester-plugin-docker/commit/9c472a2b15c16c0a73eedd8e8a728d1435607366))
+* update dependency depcheck-package-name to v2 ([#16](https://github.com/dword-design/tester-plugin-docker/issues/16)) ([cda45cd](https://github.com/dword-design/tester-plugin-docker/commit/cda45cd7e56b56df8c28fa4a81d2682f61b376f4))
+* update dependency mocha-ui-exports-auto-describe to v2 ([#17](https://github.com/dword-design/tester-plugin-docker/issues/17)) ([49b80be](https://github.com/dword-design/tester-plugin-docker/commit/49b80be617477dbcc9558e46a2b76447bb542f84))
+* update dependency output-files to v2 ([#18](https://github.com/dword-design/tester-plugin-docker/issues/18)) ([4bc66bd](https://github.com/dword-design/tester-plugin-docker/commit/4bc66bd6dba9f591778d785c637170ca7c772bf3))
+
 ## [2.0.1](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.0...v2.0.1) (2021-05-04)
 
 
