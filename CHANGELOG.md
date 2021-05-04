@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.0...v2.0.1) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency fs-extra to v10 ([#20](https://github.com/dword-design/tester-plugin-docker/issues/20)) ([83f06f9](https://github.com/dword-design/tester-plugin-docker/commit/83f06f9a523dbc9c59c02186b4f8fee2d410de59))
+* update dependency with-local-tmp-dir to v4 ([#21](https://github.com/dword-design/tester-plugin-docker/issues/21)) ([f62a7e6](https://github.com/dword-design/tester-plugin-docker/commit/f62a7e6f7d36dacc0be8f72036e36a5adc42727f))
+
 # [2.0.0](https://github.com/dword-design/tester-plugin-docker/compare/v1.1.5...v2.0.0) (2021-05-03)
 
 
