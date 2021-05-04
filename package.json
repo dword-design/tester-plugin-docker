@@ -31,7 +31,7 @@
     "mocha": "^8.3.2",
     "mocha-ui-exports-auto-describe": "^2.0.0",
     "nyc": "^15.1.0",
-    "output-files": "^1.1.24",
+    "output-files": "^2.0.0",
     "unify-mocha-output": "^1.0.6",
     "with-local-tmp-dir": "^4.0.0"
   },
