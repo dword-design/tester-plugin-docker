@@ -1,3 +1,11 @@
+## [2.0.3](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.2...v2.0.3) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester to v2 ([#15](https://github.com/dword-design/tester-plugin-docker/issues/15)) ([9f2a97b](https://github.com/dword-design/tester-plugin-docker/commit/9f2a97b87587570d0cb0c9db1aa56b356ff00575))
+* update dependency unify-mocha-output to v2 ([#19](https://github.com/dword-design/tester-plugin-docker/issues/19)) ([2bdf046](https://github.com/dword-design/tester-plugin-docker/commit/2bdf046a7439af8f5b07259857ea86662f977d53))
+
 ## [2.0.2](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.1...v2.0.2) (2021-05-04)
 
 
