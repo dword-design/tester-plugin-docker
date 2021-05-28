@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.3...v2.0.4) (2021-05-28)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#23](https://github.com/dword-design/tester-plugin-docker/issues/23)) ([2bc17dd](https://github.com/dword-design/tester-plugin-docker/commit/2bc17dd1a9ba326ca9d3459fa1e60dea2c062548))
+
 ## [2.0.3](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.2...v2.0.3) (2021-05-04)
 
 
