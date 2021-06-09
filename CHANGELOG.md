@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.4...v2.0.5) (2021-06-09)
+
+
+### Bug Fixes
+
+* update dependency mocha to v9 ([#25](https://github.com/dword-design/tester-plugin-docker/issues/25)) ([5ec7c7d](https://github.com/dword-design/tester-plugin-docker/commit/5ec7c7df98ea41abf2001d9235b1cb771fe2976a))
+
 ## [2.0.4](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.3...v2.0.4) (2021-05-28)
 
 
