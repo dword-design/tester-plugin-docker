@@ -1,3 +1,10 @@
+## [2.0.9](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.8...v2.0.9) (2022-01-04)
+
+
+### Bug Fixes
+
+* update config files ([c04b1f9](https://github.com/dword-design/tester-plugin-docker/commit/c04b1f9979fb0abebd26e66c1fdb3ec95252fd21))
+
 ## [2.0.8](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.7...v2.0.8) (2021-07-20)
 
 
