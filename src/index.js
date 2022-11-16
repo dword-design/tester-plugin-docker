@@ -43,7 +43,7 @@ export default () => ({
     await execa(
       'docker',
       ['build', '--file', this.dockerfilePath, '--tag', 'self', '.'],
-      { stderr: 'inherit' }
+      { stdio: 'inherit' }
     )
   },
 })
