@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.10...v3.0.0) (2022-11-16)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#63](https://github.com/dword-design/tester-plugin-docker/issues/63)) ([2d29aaf](https://github.com/dword-design/tester-plugin-docker/commit/2d29aaf1b8dd8efb39512b0f239d04c141a7d7fb))
+
+
+### BREAKING CHANGES
+
+* drop node 12 support
+
 ## [2.0.10](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.9...v2.0.10) (2022-01-12)
 
 
