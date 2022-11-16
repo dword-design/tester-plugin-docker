@@ -1,14 +1,13 @@
 import { endent, property } from '@dword-design/functions'
 import tester from '@dword-design/tester'
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
 import packageName from 'depcheck-package-name'
 import execa from 'execa'
 import outputFiles from 'output-files'
-import unifyMochaOutput from 'unify-mocha-output'
-import withLocalTmpDir from 'with-local-tmp-dir'
 
 export default tester(
   {
-    async works() {
+    works: async () => {
       await outputFiles({
         'index.dockerfile': endent`
           FROM node:12-alpine
@@ -18,6 +17,7 @@ export default tester(
           import tester from '@dword-design/tester'
           import execa from 'execa'
           import { endent, property } from '@dword-design/functions'
+          import expect from 'expect'
           import self from '../src'
 
           export default tester({
@@ -45,6 +45,8 @@ export default tester(
             'mocha',
             '--ui',
             packageName`mocha-ui-exports-auto-describe`,
+            '--require',
+            '@dword-design/babel-register',
             '--timeout',
             10000,
             'index.spec.js',
@@ -53,16 +55,8 @@ export default tester(
         )
           |> await
           |> property('all')
-          |> unifyMochaOutput
-      ).toMatchSnapshot(this)
+      ).toMatch('Sending build context to Docker daemon')
     },
   },
-  [
-    {
-      transform: test =>
-        function () {
-          return withLocalTmpDir(() => test.call(this))
-        },
-    },
-  ]
+  [testerPluginTmpDir()]
 )
