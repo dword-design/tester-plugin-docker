@@ -22,7 +22,7 @@
     "@dword-design/functions": "^4.0.0",
     "execa": "^5.0.0",
     "find-up": "^5.0.0",
-    "fs-extra": "^10.0.0"
+    "fs-extra": "^11.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^9.0.0",
