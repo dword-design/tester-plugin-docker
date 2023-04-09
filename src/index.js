@@ -1,15 +1,15 @@
 import { last, split } from '@dword-design/functions'
-import execa from 'execa'
-import findUp from 'find-up'
-import { outputFile, readFile } from 'fs-extra'
+import { execaCommand } from 'execa'
+import { findUp } from 'find-up'
+import fs from 'fs-extra'
 
 export default () => ({
   async after() {
-    await execa.command('docker image rm self', { stderr: 'inherit' })
+    await execaCommand('docker image rm self')
 
     const dockerfileLines =
-      readFile(this.dockerfilePath, 'utf8') |> await |> split('\n')
-    await outputFile(
+      fs.readFile(this.dockerfilePath, 'utf8') |> await |> split('\n')
+    await fs.outputFile(
       '.nyc_output/docker.js',
       JSON.stringify({
         [this.dockerfilePath]: {

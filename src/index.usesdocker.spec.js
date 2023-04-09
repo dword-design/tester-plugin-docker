@@ -1,8 +1,7 @@
 import { endent, property } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
-import packageName from 'depcheck-package-name'
-import execa from 'execa'
+import { execa } from 'execa'
 import outputFiles from 'output-files'
 
 export default tester(
@@ -18,13 +17,13 @@ export default tester(
           import execa from 'execa'
           import { endent, property } from '@dword-design/functions'
           import expect from 'expect'
-          import self from '../src'
+          import self from '../src/index.js'
 
           export default tester({
             works: async () => expect(
-              execa('docker', ['run', '--rm', '-v', \`\${process.cwd()}:/app\`, 'self', 'ls'], { all: true })
+              execa('docker', ['run', '--rm', '-v', \`\${process.cwd()}:/app\`, 'self', 'ls'])
                 |> await
-                |> property('all')
+                |> property('stdout')
             )
               .toEqual(endent\`
                 index.dockerfile
@@ -44,9 +43,7 @@ export default tester(
             '.dockerfile',
             'mocha',
             '--ui',
-            packageName`mocha-ui-exports-auto-describe`,
-            '--require',
-            '@dword-design/babel-register',
+            'exports',
             '--timeout',
             10000,
             'index.spec.js',
