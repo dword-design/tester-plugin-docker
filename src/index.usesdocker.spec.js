@@ -14,16 +14,14 @@ export default tester(
         `,
         'index.spec.js': endent`
           import tester from '@dword-design/tester'
-          import execa from 'execa'
+          import { execa } from 'execa'
           import { endent, property } from '@dword-design/functions'
-          import expect from 'expect'
+          import { expect } from 'expect'
           import self from '../src/index.js'
 
           export default tester({
             works: async () => expect(
-              execa('docker', ['run', '--rm', '-v', \`\${process.cwd()}:/app\`, 'self', 'ls'])
-                |> await
-                |> property('stdout')
+              (await execa('docker', ['run', '--rm', '-v', \`\${process.cwd()}:/app\`, 'self', 'ls'])).stdout
             )
               .toEqual(endent\`
                 index.dockerfile
@@ -48,12 +46,12 @@ export default tester(
             10000,
             'index.spec.js',
           ],
-          { all: true }
+          { all: true },
         )
           |> await
-          |> property('all')
+          |> property('all'),
       ).toMatch('Sending build context to Docker daemon')
     },
   },
-  [testerPluginTmpDir()]
+  [testerPluginTmpDir()],
 )

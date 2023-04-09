@@ -1,5 +1,5 @@
 import { last, split } from '@dword-design/functions'
-import { execaCommand } from 'execa'
+import { execa, execaCommand } from 'execa'
 import { findUp } from 'find-up'
 import fs from 'fs-extra'
 
@@ -35,7 +35,7 @@ export default () => ({
             },
           },
         },
-      })
+      }),
     )
   },
   async before() {
@@ -43,7 +43,7 @@ export default () => ({
     await execa(
       'docker',
       ['build', '--file', this.dockerfilePath, '--tag', 'self', '.'],
-      { stdio: 'inherit' }
+      { stdio: 'inherit' },
     )
   },
 })
