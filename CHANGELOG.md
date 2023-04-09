@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/dword-design/tester-plugin-docker/compare/v3.0.0...v4.0.0) (2023-04-09)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#74](https://github.com/dword-design/tester-plugin-docker/issues/74)) ([d7d6c60](https://github.com/dword-design/tester-plugin-docker/commit/d7d6c60691671a34b1a20e4e880044eec3355250))
+
+
+### BREAKING CHANGES
+
+* move to esm
+
 # [3.0.0](https://github.com/dword-design/tester-plugin-docker/compare/v2.0.10...v3.0.0) (2022-11-16)
 
 
