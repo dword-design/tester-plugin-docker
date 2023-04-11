@@ -1,3 +1,10 @@
+## [4.0.6](https://github.com/dword-design/tester-plugin-docker/compare/v4.0.5...v4.0.6) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester to v2.0.18 ([2e4430c](https://github.com/dword-design/tester-plugin-docker/commit/2e4430caab5433fefadae4d37e60e37a873784e3))
+
 ## [4.0.5](https://github.com/dword-design/tester-plugin-docker/compare/v4.0.4...v4.0.5) (2023-04-11)
 
 
