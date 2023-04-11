@@ -1,3 +1,10 @@
+## [4.0.7](https://github.com/dword-design/tester-plugin-docker/compare/v4.0.6...v4.0.7) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-tmp-dir to v2.1.26 ([d77a491](https://github.com/dword-design/tester-plugin-docker/commit/d77a4913e70a2121357e43819d47a719c193681a))
+
 ## [4.0.6](https://github.com/dword-design/tester-plugin-docker/compare/v4.0.5...v4.0.6) (2023-04-11)
 
 
