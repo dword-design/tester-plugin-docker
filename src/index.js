@@ -1,12 +1,10 @@
 import { last, split } from '@dword-design/functions'
-import { execa, execaCommand } from 'execa'
+import { execa } from 'execa'
 import { findUp } from 'find-up'
 import fs from 'fs-extra'
 
 export default () => ({
   async after() {
-    await execaCommand('docker image rm self')
-
     const dockerfileLines =
       fs.readFile(this.dockerfilePath, 'utf8') |> await |> split('\n')
     await fs.outputFile(
