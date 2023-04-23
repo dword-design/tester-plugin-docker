@@ -1,3 +1,10 @@
+## [4.0.9](https://github.com/dword-design/tester-plugin-docker/compare/v4.0.8...v4.0.9) (2023-04-23)
+
+
+### Bug Fixes
+
+* do not delete container after run ([510faa0](https://github.com/dword-design/tester-plugin-docker/commit/510faa07efa35642667db58ee64f3e5080aa18c1))
+
 ## [4.0.8](https://github.com/dword-design/tester-plugin-docker/compare/v4.0.7...v4.0.8) (2023-04-12)
 
 
