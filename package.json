@@ -22,7 +22,7 @@
     "test": "base test"
   },
   "dependencies": {
-    "@dword-design/functions": "^4.0.0",
+    "@dword-design/functions": "^5.0.0",
     "execa": "^7.1.1",
     "find-up": "^6.3.0",
     "fs-extra": "^11.1.1"
